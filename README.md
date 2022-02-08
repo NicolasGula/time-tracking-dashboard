@@ -30,7 +30,7 @@ Los usuarios deben ser capaces de:
 
 ### Links
 
-- Solution URL: [https://www.timetraking.tk/](https://your-solution-url.com)
+- Solucion URL: [Repositorio](https://github.com/NicolasGula/time-tracking-dashboard)
 - Sitio URL: [https://www.timetraking.tk/](https://www.timetraking.tk/)
 
 ### Echo con...
