@@ -1,0 +1,116 @@
+[
+  {
+    "id": 1,
+    "icon": "../img/icon-work.svg",
+    "title": "Work",
+    "timeframes": {
+      "Daily": {
+        "current": 5,
+        "previous": 7
+      },
+      "Weekly": {
+        "current": 32,
+        "previous": 36
+      },
+      "Monthly": {
+        "current": 103,
+        "previous": 128
+      }
+    }
+  },
+  {
+    "id": 2,
+    "icon": "../img/icon-play.svg",
+    "title": "Play",
+    "timeframes": {
+      "Daily": {
+        "current": 1,
+        "previous": 2
+      },
+      "Weekly": {
+        "current": 10,
+        "previous": 8
+      },
+      "Monthly": {
+        "current": 23,
+        "previous": 29
+      }
+    }
+  },
+  {
+    "id": 3,
+    "icon": "../img/icon-study.svg",
+    "title": "Study",
+    "timeframes": {
+      "Daily": {
+        "current": 0,
+        "previous": 1
+      },
+      "Weekly": {
+        "current": 4,
+        "previous": 7
+      },
+      "Monthly": {
+        "current": 13,
+        "previous": 19
+      }
+    }
+  },
+  {
+    "id": 4,
+    "icon": "../img/icon-exercise.svg",
+    "title": "Exercise",
+    "timeframes": {
+      "Daily": {
+        "current": 1,
+        "previous": 1
+      },
+      "Weekly": {
+        "current": 4,
+        "previous": 5
+      },
+      "Monthly": {
+        "current": 11,
+        "previous": 18
+      }
+    }
+  },
+  {
+    "id": 5,
+    "icon": "../img/icon-social.svg",
+    "title": "Social",
+    "timeframes": {
+      "Daily": {
+        "current": 1,
+        "previous": 3
+      },
+      "Weekly": {
+        "current": 5,
+        "previous": 10
+      },
+      "Monthly": {
+        "current": 21,
+        "previous": 23
+      }
+    }
+  },
+  {
+    "id": 6,
+    "icon": "../img/icon-self-care.svg",
+    "title": "Self Care",
+    "timeframes": {
+      "Daily": {
+        "current": 0,
+        "previous": 1
+      },
+      "Weekly": {
+        "current": 2,
+        "previous": 2
+      },
+      "Monthly": {
+        "current": 7,
+        "previous": 11
+      }
+    }
+  }
+]

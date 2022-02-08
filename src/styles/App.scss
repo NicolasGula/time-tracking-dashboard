@@ -1,0 +1,320 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+// Colors
+$blue: hsl(246, 80%, 60%);
+$light-red-work: hsl(15, 100%, 70%);
+$soft-blue-play: hsl(195, 74%, 62%);
+$light-red-study: hsl(348, 100%, 68%);
+$lime-green-exercise: hsl(145, 58%, 55%);
+$violet-social: hsl(264, 64%, 52%);
+$soft-orange-self-care: hsl(43, 84%, 65%);
+$very-dark-blue: hsl(226, 43%, 10%);
+$dark-blue: hsl(235, 46%, 20%);
+$desaturated-blue: hsl(235, 45%, 61%);
+$pale-blue: hsl(236, 100%, 87%);
+$border: 1px solid black;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background: $very-dark-blue;
+
+  .container {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .dashboard {
+      width: 70%;
+      height: 70%;
+      padding: 1% 1% 1% 2%;
+      display: flex;
+
+      .card-user {
+        width: 22.4%;
+        height: 96%;
+        border-radius: 15px;
+        background: $dark-blue;
+
+        .profile {
+          display: flex;
+          flex-direction: column;
+          height: 69%;
+          padding-top: 31px;
+          padding-left: 25px;
+          background: $blue;
+          border-radius: 15px;
+
+          img {
+            width: 37%;
+            height: auto;
+            border: 2px solid white;
+            border-radius: 50px;
+          }
+
+          .content {
+            margin-top: 36px;
+
+            p {
+              font-size: 0.9rem;
+              font-weight: 300;
+              color: $pale-blue;
+            }
+
+            h1 {
+              font-size: 2.3rem;
+              font-weight: 300;
+              color: white;
+            }
+          }
+        }
+
+        .options {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          padding: 7% 0 5% 12%;
+          height: 30%;
+
+          p {
+            width: 40%;
+            font-size: 0.9rem;
+            font-weight: 300;
+            color: $pale-blue;
+            cursor: pointer;
+          }
+
+          .active {
+            color: white;
+          }
+
+          p:hover {
+            color: white;
+          }
+        }
+      }
+
+      .card-activities {
+        margin-left: 3%;
+        width: 74%;
+
+        .wrap-cards {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 8px;
+          height: 100%;
+
+          .card {
+            width: 31%;
+            height: 45%;
+            border-radius: 15px;
+            overflow: hidden;
+
+            .icon-holder {
+              height: 18%;
+              position: relative;
+              overflow: hidden;
+              border-radius: 15px;
+
+              img {
+                position: absolute;
+                height: 170%;
+                top: -30%;
+                right: 8%;
+              }
+            }
+
+            .data-holder {
+              border-radius: 15px;
+              height: 83%;
+              background: $dark-blue;
+              padding: 27px 27px;
+              color: white;
+
+              .title {
+                display: flex;
+                align-items: center;
+                font-size: 1rem;
+                font-weight: 400;
+
+                p {
+                  margin-right: auto;
+                }
+
+                .ellipsis-img {
+                  width: 10%;
+                }
+              }
+
+              .data {
+                .hours {
+                  margin-top: 25px;
+                  font-size: 3rem;
+                  font-weight: 300;
+                  margin-bottom: 6px;
+                }
+
+                .timeframe {
+                  font-size: 0.9rem;
+                  font-weight: 300;
+                  color: $pale-blue;
+                }
+              }
+            }
+
+            .data-holder:hover {
+              background: $desaturated-blue;
+              .ellipsis-img {
+                width: 13%;
+              }
+            }
+          }
+
+          .work {
+            background: $light-red-work;
+          }
+
+          .play {
+            background: $soft-blue-play;
+          }
+
+          .study {
+            background: $light-red-study;
+          }
+
+          .exercise {
+            background: $lime-green-exercise;
+          }
+
+          .social {
+            background: $violet-social;
+          }
+
+          .care {
+            background: $soft-orange-self-care;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1316px) {
+    .card {
+      .data-holder {
+        .data {
+          display: flex;
+          align-items: center;
+
+          .hours {
+            font-size: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1070px) {
+    .container {
+      width: 110%;
+      height: 100vh;
+
+      .dashboard {
+        width: 82%;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        margin: 35% 10% 0 0;
+
+        .card-user {
+          width: 100%;
+          height: 48%;
+
+          .profile {
+            flex-direction: row;
+            height: 80%;
+
+            img {
+              width: 23%;
+              height: 70%;
+              border: 3px solid white;
+              border-radius: 50%;
+              margin: 0 4% 0 2%;
+            }
+
+            .content {
+              margin-top: 3%;
+
+              p {
+                font-size: 1rem;
+              }
+              h1 {
+                font-size: 1.5rem;
+                margin-top: 5px;
+              }
+            }
+          }
+
+          .options {
+            flex-direction: row;
+            align-items: center;
+            height: 46%;
+            background: $dark-blue;
+            border-radius: 0 0 15px 15px;
+
+            p {
+              font-size: 1.1rem;
+              margin-right: 12%;
+            }
+          }
+        }
+
+        .card-activities {
+          margin-top: 20%;
+          width: 102%;
+
+          .wrap-cards {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-around;
+            gap: 23px;
+
+            flex-wrap: nowrap;
+
+            .card {
+              width: 99%;
+
+              .icon-holder {
+                height: 22%;
+              }
+
+              .data-holder {
+                height: 95%;
+
+                .data {
+                  padding: 40px;
+                  width: 100%;
+                  .hours {
+                    margin-left: -25px;
+                    margin-top: -7px;
+                    font-size: 2rem;
+                    margin-right: 0;
+                  }
+                  .timeframe {
+                    margin-left: 70px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
